@@ -20,6 +20,7 @@ WHERE v.code IN(
     WHERE t.total_bill>1500
 );
 
+--3.USE UNION to select the visitor first name & last name who have spent greater than 2000
 SELECT ff_name,ll_name
 FROM visitor 
 UNION 
@@ -31,6 +32,7 @@ WHERE v.code IN(
     WHERE t.total_bill>1500
 );
 
+--3.USE INTERSECTION to select the visitor first name & last name who have spent greater than 2000
 SELECT ff_name,ll_name
 FROM visitor 
 INTERSECT
